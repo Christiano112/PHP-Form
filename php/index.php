@@ -118,11 +118,6 @@ try {
     // Execute Statement
     $statement_request->execute();
 
-    // Redirect to Login Page
-    // header("Location: login.html");
-    // exit();
-
-
     // Fetch Data
     $statement_response = $conn->prepare("SELECT * FROM REGISTER");
     $statement_response->execute();

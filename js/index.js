@@ -49,7 +49,7 @@ $(document).ready(() => {
 
         $.ajax({
             method: "POST",
-            url: './index.php',
+            url: '../php/index.php',
             data: formData,
         }).done((data) => {
             console.log(data);
