@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <section>
+        <h1>Login</h1>
+
+        <div class="info" id="infoHeader">
+            <h1 id="info"></h1>
+        </div>
+
+        <form action="login.php" method="post" id="form">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" placeholder="Enter your username" autocomplete="username" required spellcheck="true">
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password" autocomplete="current-password" required>
+
+            <p id="error"></p>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </section>
+
+    <script src="login.js"></script>
+</body>
+</html>

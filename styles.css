@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    margin: 2rem auto;
+    width: 96%;
+}
+
+section {
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+section h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+    background-color: #1a066c;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+form {
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input, select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    padding: 0.5rem 1rem;
+    margin: 1rem 10% !important;
+    width: 80% !important;
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: #1a066c;
+    color: #fff;
+    text-align: center;
+}
+
+form p#success {
+    color: green;
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+form p#error {
+    color: red;
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+.info {
+    z-index: 100;
+    margin: 1rem auto;
+    width: 60%;
+    max-width: 500px;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 1rem;
+    display: none;
+    background-color: #fff;
+}
+
+.info h1 {
+    color: #e00f32;
+    font-size: 1.2rem;
+}

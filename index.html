@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Form Validation</title>
+</head>
+<body>
+    <section>
+        <h1>Christiano Form</h1>
+
+        <div class="info" id="infoHeader">
+            <h1 id="info"></h1>
+        </div>
+
+        <form action="index.php" method="post" id="form">
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname" placeholder="Enter your first name" autocomplete="name" required spellcheck="true">
+
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname" placeholder="Enter your last name" autocomplete="family-name" required spellcheck="true">
+
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" placeholder="Enter your username" autocomplete="username" required spellcheck="true">
+
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender" autocomplete="sex" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" autocomplete="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password" autocomplete="new-password" required>
+
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm your password" autocomplete="new-password" required>
+
+            <p id="error"></p>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </section>
+
+    <script src="./index.js"></script>
+</body>
+</html>
